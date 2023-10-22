@@ -1,0 +1,28 @@
+.log-id-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 85%;
+}
+input{
+    background-color: transparent;
+    width: 80%;
+    height: 40%;
+    font-size: 12rem;
+    border-bottom: 2px solid hsl(320, 3%, 19%);
+    outline: none;
+    text-align: center;
+}
+
+.keyboard-container{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(320, 3%, 19%);
+    background-color: aliceblue;
+}

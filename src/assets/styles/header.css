@@ -1,0 +1,49 @@
+.kiosk-header-menu, .kiosk-legend{
+    background-color: hsl(330, 4%, 11%);
+    width: max-content;
+    padding: 0 10px;
+    height: 100%;
+    border-radius: 18px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}                  
+  .header-menu-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin: 0 10px;
+  }
+
+  .header-menu-item h4{
+    margin: 0 10px 0 5px;
+  }
+
+  .header-menu-item-ic{
+    margin: 0 5px 0;
+  }
+  
+  .header-menu-item:hover {
+    border-bottom: 10px solid hsl(22, 100%, 65%);
+    color: hsl(22, 100%, 65%);
+    cursor: pointer;
+  }
+
+/*legend*/
+.kiosk-legend-item{
+  display: flex;
+  height: 100%;
+  width: fit-content;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  margin: 0 10px;
+}
+.circle{
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 100%;
+}

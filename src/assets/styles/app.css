@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  p, h1, h2, h3, h4, h5, h6, img {user-select: none;}
+
+/*Kiosk main wrapper*/
+    .kiosk-wrapper{
+        background-image: url('../img/CvSU-Carmona-Campus.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .kiosk-container{
+            background-color: #4f5443;
+            height: 100%;
+            opacity: 90%;
+        }
+
+        /*Kiosk header menu*/
+            .kiosk-header-container{
+                height: 15%;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+            }
+                
+                  
+                  
+                  
+        /*Kiosk header content*/
+            .kiosk-header-content{
+                height: 15%;
+                padding: 10px 90px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+                .kiosk-header-greeting{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    color: #ffffff;
+                }
+                  .kiosk-header-greeting p{
+                    font-size: 1.5rem;
+                  }
+                  .kiosk-header-greeting h1{
+                    font-size: 3rem;
+                    font-style: italic;
+                  }
+
+                .kiosk-header-timedate{
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: flex-end;
+                  color: #ffffff;
+                }
+                  .kiosk-header-timedate p{
+                    font-size: 1.5rem;
+                  }
+            
+        /*Kiosk main content*/
+            .kiosk-main-menu-container{
+                height: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+                .kiosk-main-menu{
+                    width: 20%;
+                    height: 80%;
+                    background-color: #ffffff;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    transition: background-color 0.3s ease-in-out;
+                    margin: 50px;
+                }
+
+                .kiosk-main-menu-ic{
+                  margin: 30px 0;
+                }
+                .kiosk-main-menu p{
+                  font-size: 1rem;
+                }
+
+                .kiosk-main-menu:hover{
+                  background-color: hsl(22, 55%, 44%);
+                  color: #ffffff;
+                  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+                }
+        /*Back button*/
+            .home-btn-container{
+              width: 60px;
+              height: 60px;
+              border-radius: 12px;
+              background-color: #FFFFFF;
+              color: hsl(320, 3%, 19%);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+              margin-bottom: 20px;
+              transition: background-color 0.03s ease-in-out;
+            }
+
+            .home-btn-container:hover{
+              background-color: hsl(320, 3%, 19%);
+              color: #ffffff;
+            }
+
+
+
+/*Card Component Container*/
+.card-container{
+  height: 85%;
+  width: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.card-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+  width: .35em;
+  height: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 100vw;
+  margin-block: .3em;  
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #475334c5;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475334
+}
+
+
+
+@media (max-width: 1024px) {
+
+  .kiosk-main-menu {
+    width: 30%;
+    height: 80%;
+    margin: 50px; 
+  }
+
+  .kiosk-header-greeting h1 {
+    font-size: 1.75rem;
+  }
+
+  .kiosk-header-timedate h1 {
+    font-size: 1.75rem;
+  }
+
+}

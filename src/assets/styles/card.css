@@ -1,0 +1,84 @@
+h3{
+    text-align: center;
+}
+.card{
+    width: 220px;
+    height: 120px;
+    margin: 1rem;
+    background-color: #FFFFFF;
+  
+    border-radius: 12px;
+    border: .5px solid #e4e4e4;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.03);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    cursor: pointer;
+    color: hsl(320, 3%, 19%);
+}
+
+.card:hover{
+    background-color: hsl(320, 3%, 19%);
+    color: #FFFFFF;
+}
+
+.link{
+    text-decoration: none;
+    color: hsl(320, 3%, 19%);
+}
+
+/*RoomCard.jsx*/
+.room-name{
+    font-size: .8rem;
+    padding: 4px;
+    text-align: center;
+}
+.room-icon{
+    color: #000000;
+    padding: 5px;
+}
+
+.room-number{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+
+@media (max-width: 1024px) {
+
+    .card {
+      width: 180px; 
+      height: 100px; 
+      margin: 0.5rem; 
+    }
+  
+    .card:hover {
+      background-color: hsl(320, 3%, 19%);
+      color: #FFFFFF;
+    }
+  
+    .room-name {
+      font-size: 0.7rem; 
+      padding: 4px;
+      text-align: center;
+    }
+  
+    .room-number {
+      text-align: center;
+      font-size: 2.5rem; 
+    }
+  
+    .kiosk-header-container {
+      padding: 10px;
+    }
+  
+    .kiosk-legend, .kiosk-header-menu {
+      font-size: 1rem; 
+    }
+  }
+  

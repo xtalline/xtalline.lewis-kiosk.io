@@ -1,0 +1,87 @@
+.login-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/CvSU-Carmona-Campus.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.login-field-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, hsl(320, 3%, 19%), hsl(22, 100%, 87%));
+    height: 100%;
+    opacity: 90%;
+}
+    .login-field{
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35%;
+        height: 75%;
+        padding: 40px;
+    }
+        .login-field > img {
+            width: 100px;
+            background-color: #FFFFFF;
+            border-radius: 5px;
+            padding: 0 3px;
+        }
+        .login-field > form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+            .login-field > form > label {
+                font-size: .8rem;
+                font-weight: 700;
+                color: hsl(320, 3%, 19%);
+            }
+            .login-field > form > input {
+                background-color: transparent;
+                border: 1px solid hsl(320, 3%, 19%);
+                border-radius: 5px;
+                margin-bottom: 30px;
+                font-size: 1rem;
+                padding: 12px;
+            }
+        .login-field > a{
+            text-decoration: none;
+            color: hsl(320, 3%, 19%);
+            font-size: .9rem;
+            font-weight: 600;
+            margin: 15px;
+            border-bottom: 1px solid lightgray;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+        }
+        .login-field > a:hover{
+            color: hsl(22, 100%, 65%);
+            text-decoration: underline;
+        }
+
+        .login-btn{
+            text-align: center;
+            font-size: 1rem;
+            text-transform: uppercase;
+            padding: 15px 50px;
+            background-color: hsl(22, 100%, 65%);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #FFFFFF;
+            font-weight: 600;
+            margin: 20px;
+        }
+        .login-btn:hover{
+            background-color: #475334;
+        }
